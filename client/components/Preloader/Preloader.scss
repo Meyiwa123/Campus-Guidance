@@ -1,0 +1,33 @@
+$bg: #ffa07a;
+$accent: #87ceeb;
+$primary: #150080;
+
+.preloader {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+    background: linear-gradient(0deg, $bg, $accent);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $primary;
+    overflow: hidden !important;
+
+    .texts-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+        width: 280px;
+        font-size: 20px;
+        overflow: hidden;
+        font-weight: 800;
+        opacity: 0;
+        color: $primary;
+    }
+}
