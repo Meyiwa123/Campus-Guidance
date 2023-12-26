@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const pool = require('./db');
+const port = process.env.PORT || 3000;
 
 // middleware
 app.use(cors());
@@ -129,6 +130,6 @@ app.post('/api/v1/dropTable', async (req, res) => {
   }
 });
 
-app.listen(process.env.SERVER_PORT, () => {
-  console.log(`Server is running on http://localhost:${process.env.SERVER_PORT}`);
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
 });
