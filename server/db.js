@@ -158,7 +158,7 @@ const setupDatabase = async () => {
 };
 
 // Drop the table before initialization
-//dropTable();
+dropTable();
 // Run the setup function
 setupDatabase();
 
