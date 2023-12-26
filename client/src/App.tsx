@@ -22,6 +22,7 @@ function App() {
   return (
     <>
       <Preloader />
+      {/* @ts-ignore */}
       <QuestionHub questions={questions} />
     </>
   );

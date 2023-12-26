@@ -7,6 +7,19 @@ const pool = require('./db');
 app.use(cors());
 app.use(express.json());
 
+// serving static files
+const path = require('path');
+app.use(express.static(path.join(__dirname, '../client/dist/')));
+
+app.get('/', (req, res) => {
+  try {
+    res.sendFile(path.join(__dirname, '../client/index.html'));
+  } catch (error) {
+    console.error(error.message);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+});
+
 // routes
 // POST route to get recommended programs
 app.post('/api/submit-form-data', async (req, res) => {

@@ -42,6 +42,6 @@ To get a local copy up and running, follow these simple steps.
     ```bash 
     npm start
     ```
-2. Open your browser and go to http://localhost:3000.
+2. Open your browser and go to http://localhost:5000.
 3. Fill out the application form and submit the data
 
