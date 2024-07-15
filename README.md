@@ -24,7 +24,7 @@ Campus Guidance utilizes modern web development technologies including:
 - **CSV File**: Includes data of all higher institutions and programs in Canada, obtained from the Canadian government website, to populate university information dynamically.
 
 ## Getting Started
-To begin using Campus Guidance locally, firstly ensure you have the following installed:
+To begin using Campus Guidance locally, first ensure you have the following installed:
 Ensure you have the following installed:
 - Node.js
 - npm
@@ -32,5 +32,5 @@ Ensure you have the following installed:
 
 Then clone the repository:
 ```bash
-git clone https://github.com/your-username/university-application-form.git
+git clone https://github.com/Meyiwa123/Campus-Guidance.git
 ```
